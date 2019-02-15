@@ -1,1 +1,1 @@
-meet up
+meet-up
