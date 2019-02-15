@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <title>MEET UP</title>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Yesteryear" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
+  <style>#map { position: absolute; top: 0; left:0; width:100%; height: 100%; }</style>
+</head>
+<body>
+  <div class="noti-pop error-noti">
+    <i class="xi-close-circle"></i>
+    <span></span>
+  </div>
+  <div class="noti-pop new-noti">
+    <i class="xi-info"></i>
+    <span></span>
+  </div>
+  <div id="wrap">
+    <div id='map'></div>
+    <span class="marker">
+      <i class="line"></i>
+      <i class="spot"></i>
+    </span>
+    <header>
+      <h1 class="logo">Meetup</h1>
+    </header>
+    <div class="event-list-wrap">
+      <div class="inner">
+        <div class="content">
+          <ul class="meetup-list"></ul>
+        </div>
+      </div>
+      <button class="btn-toggle">
+        <i class="xi-angle-left-thin"></i>
+      </button>
+      <button class="btn-view-favourite">
+        <i class="xi-heart-o"></i>
+      </button>
+    </div>
+    <footer>
+      <div class="inner"></div>
+    </footer>
+  </div>
+  <div class="favourite-list-wrap">
+    <ul class="meetup-list"></ul>
+  </div>
+  <div class="loading">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+<script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="bundle.js"></script></body>
+</html>
